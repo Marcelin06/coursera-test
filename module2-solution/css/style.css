@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+
+h1 {
+	    		color: black;
+	    		font-size: 150%;
+	    		text-align: center;
+	    		font-weight: bold;
+	    		font-style: italic;
+	    		background-color: blue;
+	    		opacity: 1;
+	    		border: 5px red solid;
+	    		width: 110%;
+
+}
+
+p {
+	background-color: #959595;
+	border: 2px solid black;
+	font-size:;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:;
+	padding: 10px;
+	width: 100%;
+	float: left;
+	margin-right: 10px;
+	position: relative; /* to force its elements to be in the edge */
+	top: 60px;
+}
+
+p > title {
+	background-color: #FF0000;
+	text-align: center;
+	color: green;
+	border: 2px solid black;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	right: 50px;
+}
