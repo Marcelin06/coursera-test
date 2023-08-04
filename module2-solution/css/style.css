@@ -1,7 +1,5 @@
 *{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	box-sizing: border-box;	
 }
 
 h1 {
@@ -14,29 +12,30 @@ h1 {
 	    		
 }
 
-.row {
-	width: 100%;
-	
-}
-section > p{
+
+/*****Target the section box*****/
+section#aa, section#ab, section#ac{
 	background-color: #959595;
-	border: 2px solid black;
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
+	margin: 1%;
+	
+	
+	
 	float: left;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 15px;
-	padding-left: 8px;
-	padding-bottom: 10px;
-	padding-right: 8px;
-	padding-top: 30px;
-	position: relative; /* to force its elements to be in the edge */
-	top: 40px;
+	border: 2px solid black;
 }
 
-span {
-	width: 75px;
+/******Target the section paragraph******/
+section > p {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+
+
+
+/****Target the section title*/
+span.t1, span.t2, span.t3{
+	width: 100px;
 	height: 20px;
 	border: 2px solid black;
 	
@@ -44,79 +43,66 @@ span {
 	text-align: center;
 	font-weight: bold;
 	position: relative;
-	text-align: center;
-	top: 0px;
-	right: -100px;
-
-	
-	
+	top: -2px;
+	float: right;
+	border-right: 0px;
+	margin-bottom: 15px;
 }
 
-#p1 {
+	
+	
+
+
+.t1 {
 	background-color: pink;
 	color: black;
 	
 }
 
-#p2 {
+.t2 {
 	background-color: red;
 	color: white;
 }
 
-#p3 {
+.t3 {
 	background-color:yellow;
 	color: black;
 
 }
 
-/******** Desktop view ********/
-@media (min-width: 992px){
 
-	.sec1, .sec2, .sec3 {
-		/*float: left;*/
-	}
 
-	.sec1 {
-		width: 32%;
-	}
-
-	.sec2 {
-		width: 32%;
-	}
-
-	.sec3 {
-		width: 32%;
-	}
+/* Simple responsive framework */
+div.row {
+	width: 100%;	
 }
 
-/******** Tablet view ********/
-@media (min-width: 768px) and (max-width: 991px){
-	.sec1 {
-		width: 45%;
+/*******Desktop view********/
+@media (min-width: 992px){
+
+	section#aa, section#ab, section#ac{
+		width: 31%;
 	}
 
-	.sec2 {
-		width: 45%;
-	}
+}
 
-	.sec3 {
-		width: 90%;
-	}
+/*******Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
 	
+	section#aa, section#ab{
+		width: 48%;
+	}
+
+	section#ac{
+		width: 100%;
+	}
 }
 
 /******** Mobile view ********/
-@media (max-width: 991px){
-	.sec1 {
-		width: 90%;
-	}
+@media (max-width: 767px){
 
-	.sec2 {
+	section#aa, section#ab, section#ac{
 		width: 90%;
 	}
-
-	.sec3 {
-		width: 90%;
-	}
-	
 }
+
