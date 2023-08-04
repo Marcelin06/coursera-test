@@ -2,6 +2,7 @@
 	box-sizing: border-box;	
 }
 
+
 h1 {
 	    		color: black;
 	    		font-size: 250%;
@@ -16,9 +17,7 @@ h1 {
 /*****Target the section box*****/
 section#aa, section#ab, section#ac{
 	background-color: #959595;
-	margin: 1%;
-	
-	
+	margin: 1%;	
 	
 	float: left;
 	border: 2px solid black;
@@ -29,6 +28,8 @@ section > p {
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 10px;
+
+	text-align: justify;
 }
 
 
@@ -46,7 +47,7 @@ span.t1, span.t2, span.t3{
 	top: -2px;
 	float: right;
 	border-right: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 	
@@ -94,7 +95,8 @@ div.row {
 	}
 
 	section#ac{
-		width: 100%;
+		width: 98%;
+		
 	}
 }
 
@@ -102,7 +104,7 @@ div.row {
 @media (max-width: 767px){
 
 	section#aa, section#ab, section#ac{
-		width: 90%;
+		width: 98%;
 	}
 }
 
